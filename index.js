@@ -4,17 +4,16 @@ let mainState = document.getElementById("ratingState")
 let secondState = document.getElementById("thankYouPage")
 let numSelected = document.getElementById("selected")
 
-// console.log(numSelected)
+console.log(numSelected.innerHTML)
 
 for (let i = 0; i < numbers.length; i++) {
     const e = numbers[i];
     let nums = e.innerHTML
     e.addEventListener("click", (num)=>{
         console.log(`Clicked ${nums}`)
-        num = nums
+        numSelected.innerHTML = nums
         e.classList.toggle('buttonActive')
         console.log(num)
-        return num
     })
 }
 
@@ -24,7 +23,6 @@ Array.from(buttonSubmit).forEach((btnClick) => {
         if(secondState.classList.value === 'inactive'){
             mainState.classList.add("inactive")
             secondState.classList.remove('inactive')
-            numSelected.innerHTML = num
             console.log(numSelected)
         }else{
             console.log("not working")
