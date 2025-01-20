@@ -99,4 +99,5 @@ li {
 .inactive{
     display: none;
     opacity: 0;
+    position: absolute;
 }
