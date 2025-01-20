@@ -29,7 +29,7 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <main>
+    <main id="ratingState" class="test">
       <div class="star">
         <img src="./images/icon-star.svg" alt="A golden star" />
       </div>
@@ -38,23 +38,28 @@
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+      <ul id="rating">
+        <li class="number" id="1">1</li>
+        <li class="number" id="2">2</li>
+        <li class="number" id="3">3</li>
+        <li class="number" id="4">4</li>
+        <li class="number" id="5">5</li>
       </ul>
-      <button>Submit</button>
+      <button class="btn">Submit</button>
     </main>
 
     <!-- Thank you state start -->
-    <div class="inactive">
-      You selected
-      <!-- Add rating here -->
-      out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch!
-    </div>
+    <main id="thankYouPage" class="inactive">
+      <div class="img">
+        <img src="./images/illustration-thank-you.svg" alt="A illustration of a phone">
+      </div>
+      <div class="numPicked">
+        You selected <span id="selected">1</span> out of 5 
+      </div>
+      
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </main>
 
     <footer>
       <div class="attribution">

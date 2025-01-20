@@ -54,7 +54,7 @@ button {
 
 button:hover, li:hover {
     color: black;
-    background-color: white;
+    background-color: #fb7413;
     cursor: pointer;
     transition: ease-in-out .2s;
 }
@@ -75,8 +75,24 @@ li {
     align-items: center;
 }
 
+#thankYouPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.numPicked {
+    background-color: #252d37;
+    color: #fb7413;
+    padding: .5rem 1rem;
+    border-radius: 100px;
+}
+
+
 .buttonActive {
-    background-color: #fb7413;
+    background-color: white;
     color: #272E38;
 }
 
